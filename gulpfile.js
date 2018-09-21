@@ -2,7 +2,17 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var less = require('gulp-less');
 var rename = require("gulp-rename");
+var browserSync = require("browser-sync").create();
 
+gulp.task('serve', ['sass', 'less'], function() {
+    browserSync.init({
+        server: "./src"
+    });
+
+    gulp.watch("src/**/*.scss", ['sass']);
+    gulp.watch("src/**/*.less", ['less']);
+    gulp.watch("src/*.html").on('change', browserSync.reload);
+})
 
 gulp.task('less', function () {
     return gulp.src([
