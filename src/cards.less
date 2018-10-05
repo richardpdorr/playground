@@ -1,0 +1,185 @@
+@phone: ~"only screen and (max-width: 768px)";
+@tablet: ~"only screen and (min-width: 768px) and (max-width: 992px)";
+@desktop: ~"only screen and (min-width: 992px) and (max-width: 1200px)";
+@desktop-wide: ~"only screen and (min-width: 1200px)"; 
+
+.cardContainer {
+display: flex;
+height: 110px;
+width: 85px;
+box-shadow: 3px;
+}
+
+.flex-container1 {
+  padding: 10px;
+  display: flex;
+  color: #253b56;
+  @media @desktop {
+    max-width: 970px;
+  }
+  @media @desktop-wide {
+    max-width:1170px;
+  }
+    margin: auto;
+  font-family: Avenir;
+  box-sizing: border-box;
+  flex-wrap:wrap;
+}
+
+.appDescription {
+  display: inline-block;
+  font-color: #253b56;
+  vertical-align: middle;
+  font-weight: 100;
+  font-size: 12px;
+  
+}
+.appText {
+  display: block;
+  margin-left: 30px;
+}
+
+.appTitle {
+  font-color: #253b56;
+  font-size: 18px;
+  font-weight:700;
+}
+
+.disabled {
+  
+}
+
+.flex-items {
+  box-shadow: 0.5px 2px 5px 0px #CDCDCD;
+  margin: 10px;
+  font-color: #253b56;
+  height: 110px;
+  flex-basis: 40%;
+  min-width: 350px;
+  border-radius: 2px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.flex-items:hover {
+  border: 2px solid #99a4b5;
+  border-radius: 3px;
+
+}
+.flexText {
+  font-color: #253b56;
+}
+
+.imgIcon {
+  display: inline-block;
+  font-color: #253b56;
+  font-weight:bold;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+.imgIconAlaCarte {
+background-color: #42A5F3;
+height: 110px;
+width: 110px;
+}
+.imgIconDA {
+background-color:#26A69A;
+height: 110px;
+width: 110px;
+}
+
+.imgIconDME {
+background-color: #EC407A;
+height: 110px;
+width: 110px;
+}
+
+.imgIconWDWCastApp {
+  background-color: #FFA726;
+  height: 110px;
+  width: 110px;
+}
+
+.imgIconLilo {
+  background-color: #26A69A;
+  height: 110px;
+  width: 110px;
+}
+
+.svg-icon {
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lilo-icon-svg {
+  .svg-icon;
+
+  &::after {
+    content: "";
+    height:60px;
+    width:60px;
+    background-image: url('Launch_Lilo.svg');
+    fill: white;
+  }
+}
+
+.a-la-carte-icon-svg {
+  .svg-icon;
+
+  &::after {
+  content: "";
+  height:60px;
+  width:60px;
+  fill: #FFF;
+  background-image: url('Launch_AlaCarte.svg');
+  }
+}
+
+.disney-arrival-icon-svg {
+  .svg-icon;
+
+  &::after {
+  content: "";
+  height:60px;
+  width:60px;
+  fill: #FFF;
+  background-image: url('Launch_Arrivals.svg');
+  }
+}
+
+.dme-icon-svg {
+  .svg-icon;
+
+  &::after {
+  content: "";
+  height:60px;
+  width:60px;
+  fill: #FFF;
+  background-image: url('Launch_DME.svg');
+  }
+}
+
+.hotelexperience-icon-svg {
+  .svg-icon;
+
+  &::after {
+  content: "";
+  height:60px;
+  width:60px;
+  fill: #FFF;
+  background-image: url('Launch_HotelExperience.svg');
+  }
+}
+
+.wdwcast-icon-svg {
+  .svg-icon;
+  
+  &::after {
+  content: "";
+  height:60px;
+  width:60px;
+  fill: #FFF;
+  background-image: url('Launch_CastApp.svg');
+  }
+}
