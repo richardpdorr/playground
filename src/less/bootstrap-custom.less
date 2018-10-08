@@ -2,8 +2,23 @@
 @import "../../node_modules/bootstrap/less/variables.less";
 @import "../../node_modules/bootstrap/less/mixins.less";
 
+// Reset and dependencies
+@import "../../node_modules/bootstrap/less/normalize.less";
+@import "../../node_modules/bootstrap/less/print.less";
+@import "../../node_modules/bootstrap/less/glyphicons.less";
+
 // Core CSS
 @import "../../node_modules/bootstrap/less/grid.less";
 
 // Utility classes
 @import "../../node_modules/bootstrap/less/responsive-utilities.less";
+
+.row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+
+    & > [class*='col-'] {
+        padding-right:0;
+        padding-left:0;
+    }
+}
