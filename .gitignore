@@ -1,2 +1,4 @@
 public
 node_modules
+src/public
+src/.DS_Store
