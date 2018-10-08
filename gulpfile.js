@@ -9,8 +9,8 @@ gulp.task('serve', ['sass', 'less'], function() {
         server: "./src"
     });
 
-    gulp.watch("src/**/*.scss", ['sass']);
-    gulp.watch("src/**/*.less", ['less']);
+    gulp.watch("src/**/*.scss", ['sass']).on('change', browserSync.reload);
+    gulp.watch("src/**/*.less", ['less']).on('change', browserSync.reload);
     gulp.watch("src/*.html").on('change', browserSync.reload);
 })
 
@@ -23,7 +23,7 @@ gulp.task('less', function () {
         path.dirname = "css";
         path.basename += "-less";
     }))
-    .pipe(gulp.dest('./public'));
+    .pipe(gulp.dest('./src/public'));
 });
 
 gulp.task('sass', function () {
@@ -35,7 +35,7 @@ gulp.task('sass', function () {
         path.dirname = "css";
         path.basename += "-sass";
     }))
-    .pipe(gulp.dest('./public'));
+    .pipe(gulp.dest('./src/public'));
 });
 
 gulp.task('build', function () {
