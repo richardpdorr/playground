@@ -1,0 +1,480 @@
+// ------------------------------------
+// A V E N I R    F O N T S
+// ------------------------------------
+// @font-face {
+//     font-family: 'avenir-book';
+//     src: url('fonts/avenir-book.eot');
+//     src: url('fonts/avenir-book.eot?#iefix') format('embedded-opentype'),
+//          url('fonts/avenir-book.woff2') format('woff2'),
+//          url('fonts/avenir-book.woff') format('woff'),
+//          url('fonts/avenir-book.ttf') format('truetype'),
+//          url('fonts/avenir-book.svg#avenir-book') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'avenir-light';
+//     src: url('fonts/avenir-light.eot');
+//     src: url('fonts/avenir-light.eot?#iefix') format('embedded-opentype'),
+//          url('fonts/avenir-light.woff2') format('woff2'),
+//          url('fonts/avenir-light.woff') format('woff'),
+//          url('fonts/avenir-light.ttf') format('truetype'),
+//          url('fonts/avenir-light.svg#avenir-light') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'avenir-medium';
+//     src: url('fonts/avenir-medium.eot');
+//     src: url('fonts/avenir-medium.eot?#iefix') format('embedded-opentype'),
+//          url('fonts/avenir-medium.woff2') format('woff2'),
+//          url('fonts/avenir-medium.woff') format('woff'),
+//          url('fonts/avenir-medium.ttf') format('truetype'),
+//          url('fonts/avenir-medium.svg#avenir-medium') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'avenir-heavy';
+//     src: url('fonts/avenir-heavy.eot');
+//     src: url('fonts/avenir-heavy.eot?#iefix') format('embedded-opentype'),
+//          url('fonts/avenir-heavy.woff2') format('woff2'),
+//          url('fonts/avenir-heavy.woff') format('woff'),
+//          url('fonts/avenir-heavy.ttf') format('truetype'),
+//          url('fonts/avenir-heavy.svg#avenir-heavy') format('svg');
+//     font-weight: normal;
+//     font-style: bold;
+// }
+
+// ------------------------------------
+// KINGSWELL DIRECTIVES
+// ------------------------------------
+// --------
+// CONTROLS
+// @import "../../../features/ui-framework/wdpr-actionable-icons/wdpr-actionable-icons";
+// @import "../../../features/ui-framework/wdpr-buttons/wdpr-buttons";
+// @import "../../../features/ui-framework/wdpr-checkbox/wdpr-checkbox";
+// @import "../../../features/ui-framework/wdpr-drop-downs-multi/wdpr-drop-downs-multi";
+// @import "../../../features/ui-framework/wdpr-drop-downs-single/wdpr-drop-downs-single";
+// @import "../../../features/ui-framework/wdpr-flyout-menu/wdpr-flyout-menu";
+// @import "../../../features/ui-framework/wdpr-main-menu-panel/wdpr-main-menu-panel";
+// @import "../../../features/ui-framework/wdpr-pagination/wdpr-pagination";
+// @import "../../../features/ui-framework/wdpr-pill/wdpr-pill";
+// @import "../../../features/ui-framework/wdpr-radio-button/wdpr-radio-button";
+// @import "../../../features/ui-framework/wdpr-shade/wdpr-shade";
+// @import "../../../features/ui-framework/wdpr-side-panel/wdpr-side-panel";
+// @import "../../../features/ui-framework/wdpr-super-combobox/wdpr-super-combobox";
+// @import "../../../features/ui-framework/wdpr-switch/wdpr-switch";
+// @import "../../../features/ui-framework/wdpr-text-area/wdpr-text-area";
+// @import "../../../features/ui-framework/wdpr-text-field/wdpr-text-field";
+// @import "../../../features/ui-framework/wdpr-text-link/wdpr-text-link";
+// // --------
+// // PATTERNS
+// @import "../../../features/ui-framework/wdpr-accordion/wdpr-accordion";
+// @import "../../../features/ui-framework/wdpr-side-panel/wdpr-side-panel";
+// @import "../../../features/ui-framework/wdpr-main-menu-panel/wdpr-main-menu-panel";
+// @import "../../../features/ui-framework/wdpr-list/wdpr-list";
+
+// -----------------------------------------------------------------------------
+// G L O B A L    V A R I A B L E S
+// -----------------------------------------------------------------------------
+@main-menu-panel-height: 52px;
+@smartphones: ~"only screen and (max-width: 767px)";
+@tablet-portrait: ~"only screen and (max-width: 991px)";
+@iphone5: ~"only screen and (min-device-width: 320px) and (max-device-width: 568px)";
+@tablets: ~"only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)";
+@large: ~"only screen and (min-width: 1180px)";
+@ie: ~"screen and (-ms-high-contrast: active), (-ms-high-contrast: none)";
+@kng-tablet-portrait: ~"only screen and (min-width: @{kng-screen-sm-min}) and (max-width: @{kng-screen-sm-max})";
+@kng-tablet-landscape: ~"only screen and (min-width: @{kng-screen-md-min}) and (max-width: @{kng-screen-md-max})";
+@kng-desktop-large: ~"only screen and (min-width: @{kng-screen-lg-min})";
+@kng-talbet-ipad-air: ~"only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)";
+@kng-ipad-pro-portrait : ~"only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)";
+@kng-ipad-pro-landscape : ~"only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)";
+// Kingswell Widths
+// ------------------------------------
+@kng-screen-xs-max: 767px;
+@kng-screen-sm-min: 768px;
+@kng-screen-sm-max: 991px;
+@kng-screen-md-min: 992px;
+@kng-screen-md-max: 1199px;
+@kng-screen-lg-min: 1200px;
+
+// Kingswell Named Colors
+
+// ------------------------------------
+@kng-color-white:            #ffffff;
+@kng-color-light-blue:       #ebf6fc;
+@kng-color-primary-blue:     #41a7e1;
+@kng-color-medium-blue:      #1483bd;
+@kng-color-dark-blue:        #044499;
+@kng-color-active-dark-blue: #253b56;
+@kng-color-inactive-grey:    #a1afc0;
+@kng-color-messaging-grey:   #8294aa;
+@kng-color-active-grey:      #65778a;
+@kng-color-workspace-grey:   #f2f2f2;
+@kng-color-medium-grey:      #d9d9d9;
+@kng-color-light-yellow:     #fcf8e3;
+@kng-color-dark-yellow:      #c09853;
+@kng-color-green:            #6fa623;
+@kng-color-light-orange:     #f7dcd5;
+@kng-color-alert-orange:     #ff6633;
+@kng-color-orange:           #DE5A2E;
+@kng-color-magic-kingdom:    #1994d7;
+@kng-color-water-parks:      #009eb2;
+@kng-color-animal-kingdom:   #628d25;
+@kng-color-epcot:            #d0662c;
+@kng-color-hollywood-studios:#6f46ad;
+@kng-color-other-property:   #0a4999;
+@kng-color-black:            #000000;
+@kng-color-black-text:       #555555;
+
+// Kingswell Derived Colors
+// ------------------------------------
+@kng-color-divider-grey:     #506277;
+@kng-color-primary-green:    #7cb130;
+@kng-color-light-green:      #8dc74c;
+@kng-color-dark-green:       #5a8822;
+@kng-color-disabled-grey:    #bcbcbc;
+@kng-color-bg-disabled-grey: #eeeeee;
+@kng-color-active-light-grey:#f9f9f9;
+@kng-color-disclaimer:       #768aa0;
+@kng-color-input-border:     #e0e0e0;
+@alert-orange:                #ff6633;
+
+// Animation
+// ------------------------------------
+@kng-animation-default-function: cubic-bezier(0,1,.8,1);
+@kng-animation-default-time: 500ms;
+@kng-animation-overlay-time: 500ms;
+
+// Z-Index Values
+// ------------------------------------
+@kng-z-index-panel: 100;
+@kng-z-index-panel-underlay: @kng-z-index-panel - 1;
+@kng-z-index-shim-overlay: 1000;
+@kng-z-index-header: @kng-z-index-panel - 1;
+@kng-z-index-footer: @kng-z-index-header - 1;
+@kng-z-index-side-menu: @kng-z-index-shim-overlay + 1;
+
+// Component color definitions
+// ------------------------------------
+@kng-text-primary: @kng-color-active-dark-blue;
+@kng-text-grey: @kng-color-messaging-grey;
+
+// Typeography
+// ------------------------------------
+@kng-font-book: 'avenir-book';
+@kng-font-light: 'avenir-light';
+@kng-font-medium: 'avenir-medium';
+@kng-font-heavy: 'avenir-heavy';
+
+@kng-font-weight-light: 100;
+@kng-font-weight-book: 400;
+@kng-font-weight-medium: 500;
+@kng-font-weight-heavy: 700;
+
+@kng-font-size-h1: 36px;
+@kng-font-size-h2: 28px;
+@kng-font-size-h3: 24px;
+@kng-font-size-h4: 18px;
+@kng-font-size-b1: 16px;
+@kng-font-size-b2: 14px;
+@kng-font-size-b3: 12px;
+
+@kng-line-height-h1: 42px;
+@kng-line-height-h2: 36px;
+@kng-line-height-h3: 30px;
+@kng-line-height-h4: 24px;
+@kng-line-height-b1: 20px;
+@kng-line-height-b2: 18px;
+@kng-line-height-b3: 16px;
+
+// Overrides
+// ------------------------------------
+@font-family-sans-serif:  @kng-font-book, Helvetica, Arial, sans-serif;
+@text-color:              @kng-text-primary;
+
+@input-bg:                @kng-color-white;
+@input-bg-disabled:       @kng-color-workspace-grey;
+@input-color:             @kng-text-primary;
+@input-color-placeholder: @kng-color-messaging-grey;
+@input-border:            @kng-color-input-border;
+
+// ------------------------------------
+// Shared mixins
+// ------------------------------------
+.font-weight-light() {
+    font-family: @kng-font-light;
+    font-weight: @kng-font-weight-light;
+}
+
+.font-weight-book() {
+    font-family: @kng-font-book;
+    font-weight: @kng-font-weight-book;
+}
+
+.font-weight-medium() {
+    font-family: @kng-font-medium;
+    font-weight: @kng-font-weight-medium;
+}
+
+.font-weight-heavy() {
+    font-family: @kng-font-heavy;
+    font-weight: @kng-font-weight-heavy;
+}
+
+.typography-b1(light, @color: @kng-color-active-dark-blue) {
+    .font-weight-light();
+}
+
+.typography-b1(book, @color: @kng-color-active-dark-blue) {
+    .font-weight-book();
+}
+
+.typography-b1(medium, @color: @kng-color-active-dark-blue) {
+    .font-weight-medium();
+}
+
+.typography-b1(heavy, @color: @kng-color-active-dark-blue) {
+    .font-weight-heavy();
+}
+
+.typography-b1(@_, @color: @kng-color-active-dark-blue) {
+    color: @color;
+    font-size: @kng-font-size-b1;
+    line-height: @kng-line-height-b1;
+}
+
+.typography-b2(book, @color: @kng-color-active-dark-blue) {
+    .font-weight-book();
+}
+
+.typography-b2(medium, @color: @kng-color-active-dark-blue) {
+    .font-weight-medium();
+}
+
+.typography-b2(heavy, @color: @kng-color-active-dark-blue) {
+    .font-weight-heavy();
+}
+
+.typography-b2(@_, @color: @kng-color-active-dark-blue) {
+    color: @color;
+    font-size: @kng-font-size-b2;
+    line-height: @kng-line-height-b2;
+}
+
+.typography-b3(@color: @kng-color-messaging-grey) {
+    color: @color;
+    font-size: @kng-font-size-b3;
+    .font-weight-book();
+    line-height: @kng-line-height-b3;
+}
+
+// ------------------------------------
+// HTML Elements
+// ------------------------------------
+html {
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    padding-top: 70px;
+    .font-weight-light();
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: @kng-color-active-dark-blue;
+    margin: 0;
+    .font-weight-book();
+
+    b,
+    &.medium {
+        .font-weight-medium();
+    }
+
+    strong,
+    &.heavy {
+        .font-weight-heavy();
+    }
+}
+
+h1, h2 {
+    .font-weight-light();
+}
+
+h3, h4 {
+    .font-weight-book();
+}
+
+h1 {
+    font-size: @kng-font-size-h1;
+    line-height: @kng-line-height-h1;
+}
+
+h2 {
+    font-size: @kng-font-size-h2;
+    line-height: @kng-line-height-h2;
+}
+
+h3 {
+    font-size: @kng-font-size-h3;
+    line-height: @kng-line-height-h3;
+}
+
+h4 {
+    font-size: @kng-font-size-h4;
+    line-height: @kng-line-height-h4;
+}
+
+a {
+    .typography-b2(book, @kng-color-primary-blue);
+
+    &:hover {
+        .typography-b2(book, @kng-color-primary-blue);
+    }
+}
+
+p, span {
+    margin: 0;
+    .typography-b2(book);
+
+    &.medium {
+        .typography-b2(medium);
+    }
+
+    &.heavy {
+        .typography-b2(heavy);
+    }
+}
+
+// ------------------------------------
+// Classes
+// ------------------------------------
+.b1 {
+    .typography-b1(book);
+}
+
+.b2 {
+    .typography-b2(book);
+}
+
+.b3 {
+    .typography-b3();
+}
+
+.b1,
+.b2,
+.b3 {
+    b,
+    &.medium {
+        .font-weight-medium();
+    }
+
+    strong,
+    &.heavy {
+        .font-weight-heavy();
+    }
+}
+
+
+@avenir-book-font: 'Avenir-Book', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+@avenir-medium-font: 'Avenir-Medium', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+@avenir-medium-font: 'avenir-medium';
+@avenir-heavy-font: 'avenir-heavy';
+
+.font-h1 {
+    font-family: @avenir-book-font;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 100;
+}
+.font-h1-heavy {
+    &:extend(.font-h1);
+    font-family: @avenir-heavy-font;
+    font-weight: 700;
+}
+.font-h2 {
+    font-family: @avenir-book-font;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 100;
+}
+.font-h2-heavy {
+    &:extend(.font-h2);
+    font-family: @avenir-heavy-font;
+    font-weight: 700;
+}
+.font-h3 {
+    font-family: @avenir-book-font;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.font-h3-heavy {
+    &:extend(.font-h3);
+    font-family: @avenir-heavy-font;
+    font-weight: 700;
+}
+.font-h4 {
+    font-family: @avenir-book-font;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.font-h4-medium {
+    &:extend(.font-h4);
+    font-family: @avenir-medium-font;
+    font-weight: 500;
+}
+.font-h4-heavy {
+    &:extend(.font-h4);
+    font-family: @avenir-heavy-font;
+    font-weight: 700;
+}
+.font-b1 {
+    font-family: @avenir-book-font;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.font-b1-medium {
+    &:extend(.font-b1);
+    font-family: @avenir-medium-font;
+    font-weight: 500;
+}
+.font-b1-heavy {
+    &:extend(.font-b1);
+    font-family: @avenir-heavy-font;
+    font-weight: 700;
+}
+.font-b2 {
+    font-family: @avenir-book-font;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.mrg-btm-five{
+    margin-bottom : 5px;
+}
+.font-b2-medium {
+    &:extend(.font-b2);
+    font-family: @avenir-medium-font;
+    font-weight: 500;
+}
+.font-b2-heavy {
+    &:extend(.font-b2);
+    font-family: @avenir-heavy-font;
+    font-weight: 700;
+}
+.font-b3 {
+    font-family: @avenir-book-font;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
