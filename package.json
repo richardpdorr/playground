@@ -15,7 +15,8 @@
     "gulp": "^3.9.1",
     "gulp-less": "^4.0.1",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.1"
+    "gulp-sass": "^4.0.1",
+    "prettier": "1.14.3"
   },
   "dependencies": {
     "bootstrap": "^3.3.7"
