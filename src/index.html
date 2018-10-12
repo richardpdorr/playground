@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DA notification-less</title>
-    <link href="../public/css/notification-less.css" rel="stylesheet" type="text/css">
+  <title>DU App</title>
+  <!-- Import Bootstrap -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../public/css/notification_a-less.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+          $("#myModal").modal('show');
+      }); 
+   
+  </script>  
 </head>
+<body class = "thebody">
+<div class="container" data-backdrop="static">
 
-<body>
-    <div class="container1">
-       test
-    </div>
+  <!-- Modal -->
+  <!--class="modal fade"-->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
     
-</body>
-</html>
+      <!-- Modal content-->
+      <div class="modal-content ">
+
+        <!---------- Modal header------------>
+        <div class="modal-header h_modal">
+            <!-- Closing button-->
+            <button type="button" class="close"> <img src="ic_close.svg" width="20" /> </button>
+            <!-- Modal header image-->
+            <img src= "yellow_pic.png"></div>
+
+                  <!------------- Modal body------------->
+                  <div class="modal-body b_modal">
+                  <h2 align="center"><b><font color="black"><strong>There is more to explore!</strong></font></b></h2> 
+                  <div class = "a"> 
+                  <p align="center"> <font color="black">New features are now available through Disney UpFront Learning.</font></p> </div> </div>
+
+          <!--------------- Modal footer-------------->
+          <div class="modal-footer f_modal">
+                <!--JS: data-toggle="modal" data-target="#myModal"-->
+          <button type="button" class="btn btn-info btn-lg" ><strong></strong>Learn More</button> 
+          </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>

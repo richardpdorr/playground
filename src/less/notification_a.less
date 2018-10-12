@@ -1,0 +1,113 @@
+@import "./ui-framework.less";
+
+/* background color */
+.thebody {
+    background-color: #114D97;
+}
+
+/* division btw sentance */
+div.a {
+    padding-top: 15px;
+}
+
+/* make modal in the center of the screen */
+.modal {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) { 
+    .modal:before {
+      display: inline-block;
+      vertical-align: middle;
+      content: " ";
+      height: 100%;
+    }
+  }
+  
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+
+/* header of the Modal */
+.h_modal{
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-bottom: 0 none;
+    border-top:none;
+    
+}
+
+/* body of the Modal */
+  .b_modal{
+    padding-top: 30px;
+    padding-bottom: 0px;
+    border-top:none;
+    border-bottom: 0 none;  
+  
+}
+
+/* footer of the Modal */
+.f_modal{
+    padding-top: 20px;
+    padding-bottom: 90px;
+    border-top:none;
+    border-bottom: 0 none;
+}
+
+/* No fading of the Modal */
+.modal-backdrop.fade.in{
+    filter: alpha(opacity=100) !important;
+    background:  #114D97;
+    }
+
+
+/* Make the image responsive */
+.container img {
+    width: 100%;
+    height: 100%;
+
+  }
+
+
+/* Make the container pop up instead of slide */
+  .modal.fade:not(.in) .modal-dialog {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* Style the Learn More button */
+.container .btn {
+    text-align:center;
+    background-color: #00993E; 
+    border-color:  #00993E;
+    height:35px; 
+    
+  
+    padding-top: 5px;    //padding of button
+    padding-bottom: 5px;
+    width: 25%;
+    margin-left: 30%;
+    margin-right: 40%;
+    border-radius: 17px;   //make rounded button
+    font-size: 16px;
+    color: @kng-color-white;
+    font-weight: normal;
+    //font-style: italic;
+    
+    
+  }
+   
+  /* Style the Closing button */
+  .close {
+    color: @kng-color-white; 
+    opacity: 1;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}   
+
+
