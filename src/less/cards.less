@@ -43,9 +43,6 @@ box-shadow: 3px;
   font-size: 18px;
   font-weight:700;
 }
- .disabled {
-  
-}
  .flex-items {
   box-shadow: 0.5px 2px 5px 0px #CDCDCD;
   margin: 10px;
@@ -60,6 +57,16 @@ box-shadow: 3px;
   &.-disabled {
       background-color:@kng-color-medium-grey;
       color:@kng-color-active-grey;
+      & > .imgIcon {
+        background-color: @kng-color-inactive-grey;
+       
+      } 
+      & > .card-text {
+        & > .appText {
+          color:@kng-color-messaging-grey;
+          font-weight: 700;
+        }
+      }
   }
   &:hover {
     border: 2px solid #99a4b5;
@@ -77,9 +84,15 @@ box-shadow: 3px;
  .imgIcon {
   display: inline-block;
   color: #253b56;
-  font-weight:bold;
+  font-weight:700;
   vertical-align: middle;
-  font-weight: bold;
+  
+}
+.card-text {
+  display: inline-block;
+  font-weight:700;
+  vertical-align: middle;
+  
 }
  .imgIconAlaCarte {
 background-color: #42A5F3;
