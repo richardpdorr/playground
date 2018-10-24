@@ -57,6 +57,7 @@ box-shadow: 3px;
   &.-disabled {
       background-color:@kng-color-medium-grey;
       color:@kng-color-active-grey;
+      position: relative;
       & > .imgIcon {
         background-color: @kng-color-inactive-grey;
        
@@ -67,13 +68,19 @@ box-shadow: 3px;
           font-weight: 700;
         }
       }
+    &::after {
+      content: url('ic_alert.svg') "System Unavailable";
+      font-size: @kng-font-size-b3;
+      color: @kng-color-messaging-grey;
+      position: absolute;
+    }  
   }
   &:hover {
     border: 2px solid #99a4b5;
     border-radius: 3px;
     &.-disabled {
       border: none;
-   }
+    }
 }
  }
 
