@@ -1,3 +1,247 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  box-sizing: border-box;
+  padding-top: 70px;
+  font-family: 'avenir-light';
+  font-weight: 100;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #253b56;
+  margin: 0;
+  font-family: 'avenir-book';
+  font-weight: 400;
+}
+h1 b,
+h2 b,
+h3 b,
+h4 b,
+h5 b,
+h6 b,
+h1.medium,
+h2.medium,
+h3.medium,
+h4.medium,
+h5.medium,
+h6.medium {
+  font-family: 'avenir-medium';
+  font-weight: 500;
+}
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong,
+h1.heavy,
+h2.heavy,
+h3.heavy,
+h4.heavy,
+h5.heavy,
+h6.heavy {
+  font-family: 'avenir-heavy';
+  font-weight: 700;
+}
+h1,
+h2 {
+  font-family: 'avenir-light';
+  font-weight: 100;
+}
+h3,
+h4 {
+  font-family: 'avenir-book';
+  font-weight: 400;
+}
+h1 {
+  font-size: 36px;
+  line-height: 42px;
+}
+h2 {
+  font-size: 28px;
+  line-height: 36px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+}
+a {
+  font-family: 'avenir-book';
+  font-weight: 400;
+  color: #41a7e1;
+  font-size: 14px;
+  line-height: 18px;
+}
+a:hover {
+  font-family: 'avenir-book';
+  font-weight: 400;
+  color: #41a7e1;
+  font-size: 14px;
+  line-height: 18px;
+}
+p,
+span {
+  margin: 0;
+  font-family: 'avenir-book';
+  font-weight: 400;
+  color: #253b56;
+  font-size: 14px;
+  line-height: 18px;
+}
+p.medium,
+span.medium {
+  font-family: 'avenir-medium';
+  font-weight: 500;
+  color: #253b56;
+  font-size: 14px;
+  line-height: 18px;
+}
+p.heavy,
+span.heavy {
+  font-family: 'avenir-heavy';
+  font-weight: 700;
+  color: #253b56;
+  font-size: 14px;
+  line-height: 18px;
+}
+.b1 {
+  font-family: 'avenir-book';
+  font-weight: 400;
+  color: #253b56;
+  font-size: 16px;
+  line-height: 20px;
+}
+.b2 {
+  font-family: 'avenir-book';
+  font-weight: 400;
+  color: #253b56;
+  font-size: 14px;
+  line-height: 18px;
+}
+.b3 {
+  color: #8294aa;
+  font-size: 12px;
+  font-family: 'avenir-book';
+  font-weight: 400;
+  line-height: 16px;
+}
+.b1 b,
+.b2 b,
+.b3 b,
+.b1.medium,
+.b2.medium,
+.b3.medium {
+  font-family: 'avenir-medium';
+  font-weight: 500;
+}
+.b1 strong,
+.b2 strong,
+.b3 strong,
+.b1.heavy,
+.b2.heavy,
+.b3.heavy {
+  font-family: 'avenir-heavy';
+  font-weight: 700;
+}
+.font-h1,
+.font-h1-heavy {
+  font-family: 'Avenir-Book', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 100;
+}
+.font-h1-heavy {
+  font-family: 'avenir-heavy';
+  font-weight: 700;
+}
+.font-h2,
+.font-h2-heavy {
+  font-family: 'Avenir-Book', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 100;
+}
+.font-h2-heavy {
+  font-family: 'avenir-heavy';
+  font-weight: 700;
+}
+.font-h3,
+.font-h3-heavy {
+  font-family: 'Avenir-Book', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.font-h3-heavy {
+  font-family: 'avenir-heavy';
+  font-weight: 700;
+}
+.font-h4,
+.font-h4-medium,
+.font-h4-heavy {
+  font-family: 'Avenir-Book', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.font-h4-medium {
+  font-family: 'avenir-medium';
+  font-weight: 500;
+}
+.font-h4-heavy {
+  font-family: 'avenir-heavy';
+  font-weight: 700;
+}
+.font-b1,
+.font-b1-medium,
+.font-b1-heavy {
+  font-family: 'Avenir-Book', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.font-b1-medium {
+  font-family: 'avenir-medium';
+  font-weight: 500;
+}
+.font-b1-heavy {
+  font-family: 'avenir-heavy';
+  font-weight: 700;
+}
+.font-b2,
+.font-b2-medium,
+.font-b2-heavy {
+  font-family: 'Avenir-Book', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.mrg-btm-five {
+  margin-bottom: 5px;
+}
+.font-b2-medium {
+  font-family: 'avenir-medium';
+  font-weight: 500;
+}
+.font-b2-heavy {
+  font-family: 'avenir-heavy';
+  font-weight: 700;
+}
+.font-b3 {
+  font-family: 'Avenir-Book', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
 .cardContainer {
   display: flex;
   height: 110px;
@@ -25,7 +269,7 @@
 }
 .appDescription {
   display: inline-block;
-  font-color: #253b56;
+  color: #253b56;
   vertical-align: middle;
   font-weight: 100;
   font-size: 12px;
@@ -35,14 +279,14 @@
   margin-left: 30px;
 }
 .appTitle {
-  font-color: #253b56;
+  color: #253b56;
   font-size: 18px;
   font-weight: 700;
 }
 .flex-items {
   box-shadow: 0.5px 2px 5px 0px #CDCDCD;
   margin: 10px;
-  font-color: #253b56;
+  color: #253b56;
   height: 110px;
   flex-basis: 40%;
   min-width: 350px;
@@ -50,16 +294,23 @@
   overflow: hidden;
   box-sizing: border-box;
 }
+.flex-items.-disabled {
+  background-color: #d9d9d9;
+  color: #65778a;
+}
 .flex-items:hover {
   border: 2px solid #99a4b5;
   border-radius: 3px;
 }
+.flex-items:hover.-disabled {
+  border: none;
+}
 .flexText {
-  font-color: #253b56;
+  color: #253b56;
 }
 .imgIcon {
   display: inline-block;
-  font-color: #253b56;
+  color: #253b56;
   vertical-align: middle;
   font-weight: bold;
 }

@@ -250,35 +250,15 @@ body {
   font-family: Avenir;
   opacity: 0.9;
 }
-.img-background {
+.training-background {
   background-color: white;
   height: 320px;
   max-width: 590px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
-.learn-more {
-  display: block;
-  height: 250px;
-  background-color: #ffffff;
-  opacity: 100%;
-  text-align: center;
-  max-width: 590px;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-}
-.learn-more h2 {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  padding-top: 30px;
-  padding-bottom: 15px;
-}
-.learn-more h3 {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  padding-bottom: 20px;
+.training-content {
+  align-items: center;
 }
 .training-button {
   background-color: green;
@@ -286,22 +266,61 @@ body {
   border-radius: 24px;
   height: 35px;
   min-width: 130px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 .training-button:hover {
   background-color: #8dc74c;
 }
-.training-icon {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  width: 250px;
+.training-gif {
+  padding-top: 40px;
+  margin: auto;
   height: 250px;
-  margin-top: 75px;
+  width: 250px;
+  display: block;
 }
 .training-modal {
-  height: 570px;
+  max-height: 570px;
+  max-width: 590px;
+  margin: auto;
+}
+.training-steps h2 {
+  margin: auto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  color: #253B56;
+}
+.training-steps p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #253B56;
+}
+.training-steps {
+  display: block;
+  height: 250px;
+  background-color: #ffffff;
+  text-align: center;
+  width: 590px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  box-sizing: border-box;
+}
+.video-icon {
+  margin-top: 20px;
+  height: 28px;
+  width: 28px;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+.watchvid {
+  color: #0190E3;
+  font-size: 14px;
+  line-height: 30px;
+  padding-bottom: 10px;
 }
