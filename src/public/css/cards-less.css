@@ -301,6 +301,7 @@ span.heavy {
   position: relative;
   margin-right: 100px;
   clear: both;
+  box-shadow: none;
 }
 .flex-items.-disabled > .imgIcon {
   background-color: #a1afc0;
@@ -316,16 +317,25 @@ span.heavy {
 .flex-items.-disabled > .card-text > .appDescription {
   font-weight: 400;
 }
+.flex-items.-disabled::before {
+  content: "";
+  background-image: url('ic_alert.svg');
+  height: 27px;
+  width: 27px;
+  position: absolute;
+  top: 60px;
+  left: 145px;
+}
 .flex-items.-disabled::after {
-  content: url('ic_alert.svg') "   System Unavailable";
+  content: "System Unavailable";
   font-size: 12px;
   color: #8294aa;
   position: absolute;
-  padding-top: 60px;
-  left: 130px;
+  padding-top: 70px;
+  left: 175px;
 }
 .flex-items:hover {
-  border: 2px solid #99a4b5;
+  border: 2px solid #8294aa;
   border-radius: 3px;
 }
 .flex-items:hover.-disabled {
