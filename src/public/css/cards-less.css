@@ -342,11 +342,11 @@ span.heavy {
   border: none;
 }
 .flexText {
-  color: #253b56;
+  color: #253b56 #253b56;
 }
 .imgIcon {
   display: inline-block;
-  color: #253b56;
+  color: #253b56 #253b56;
   font-weight: 700;
   vertical-align: middle;
 }
