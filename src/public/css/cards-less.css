@@ -293,9 +293,10 @@ span.heavy {
   border-radius: 2px;
   overflow: hidden;
   box-sizing: border-box;
+  display: inline;
 }
 .flex-items.-disabled {
-  background-color: #d9d9d9;
+  background-color: #f2f2f2;
   color: #65778a;
   position: relative;
   margin-right: 100px;
@@ -304,19 +305,24 @@ span.heavy {
 .flex-items.-disabled > .imgIcon {
   background-color: #a1afc0;
 }
+.flex-items.-disabled > .card-text {
+  vertical-align: top;
+  padding-top: 25px;
+}
 .flex-items.-disabled > .card-text > .appText {
   color: #8294aa;
   font-weight: 700;
 }
+.flex-items.-disabled > .card-text > .appDescription {
+  font-weight: 400;
+}
 .flex-items.-disabled::after {
-  content: "System Unavailable";
+  content: url('ic_alert.svg') " System Unavailable";
   font-size: 12px;
   color: #8294aa;
   position: absolute;
-  padding-top: 80px;
-  width: 100%;
-  padding-right: 100px;
-  float: left;
+  padding-top: 60px;
+  left: 130px;
 }
 .flex-items:hover {
   border: 2px solid #99a4b5;

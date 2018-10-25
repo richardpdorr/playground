@@ -53,9 +53,11 @@ box-shadow: 3px;
   border-radius: 2px;
   overflow: hidden;
   box-sizing: border-box;
+  display: inline;
+
 //**************DISABLED STATE****************
   &.-disabled {
-      background-color:@kng-color-medium-grey;
+      background-color:@kng-color-workspace-grey;
       color:@kng-color-active-grey;
       position: relative;
       margin-right: 100px;
@@ -66,24 +68,28 @@ box-shadow: 3px;
        
       } 
       & > .card-text {
+        vertical-align: top;
+        padding-top: 25px;
+
         & > .appText {
           color:@kng-color-messaging-grey;
           font-weight: 700;
+          
 
+        }
+        & > .appDescription {
+          font-weight: 400;
         }
       }
     &::after {
-      content:  "System Unavailable";
-      // url('ic_alert.svg') <--put this after content: after image is resized and grey
+      content: url('ic_alert.svg') " System Unavailable";
       font-size: @kng-font-size-b3;
       color: @kng-color-messaging-grey;
       position: absolute;
-      padding-top: 80px;
-      width: 100%;
-      padding-right: 100px;
-      float: left;
+      padding-top: 60px;
+      left: 130px;
       
-    
+
     }  
   }
   &:hover {
