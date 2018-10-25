@@ -299,6 +299,7 @@ span.heavy {
   color: #65778a;
   position: relative;
   margin-right: 100px;
+  clear: both;
 }
 .flex-items.-disabled > .imgIcon {
   background-color: #a1afc0;
@@ -313,6 +314,9 @@ span.heavy {
   color: #8294aa;
   position: absolute;
   padding-top: 80px;
+  width: 100%;
+  padding-right: 100px;
+  float: left;
 }
 .flex-items:hover {
   border: 2px solid #99a4b5;
