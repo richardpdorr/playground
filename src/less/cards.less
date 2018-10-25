@@ -53,11 +53,13 @@ box-shadow: 3px;
   border-radius: 2px;
   overflow: hidden;
   box-sizing: border-box;
-
+//**************DISABLED STATE****************
   &.-disabled {
       background-color:@kng-color-medium-grey;
       color:@kng-color-active-grey;
       position: relative;
+      margin-right: 100px;
+      // margin-left: 30px;
       & > .imgIcon {
         background-color: @kng-color-inactive-grey;
        
@@ -66,13 +68,17 @@ box-shadow: 3px;
         & > .appText {
           color:@kng-color-messaging-grey;
           font-weight: 700;
+
         }
       }
     &::after {
-      content: url('ic_alert.svg') "System Unavailable";
+      content:  "System Unavailable";
+      // url('ic_alert.svg') <--put this after content: after image is resized and grey
       font-size: @kng-font-size-b3;
       color: @kng-color-messaging-grey;
       position: absolute;
+      padding-top: 80px;
+      
     }  
   }
   &:hover {
