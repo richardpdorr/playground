@@ -324,10 +324,10 @@ span.heavy {
   width: 27px;
   position: absolute;
   top: 60px;
-  left: 145px;
+  left: 140px;
 }
 .flex-items.-disabled::after {
-  content: "System Unavailable";
+  content: "   System Unavailable";
   font-size: 12px;
   color: #8294aa;
   position: absolute;
