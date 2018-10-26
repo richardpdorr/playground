@@ -320,19 +320,21 @@ span.heavy {
 .flex-items.-disabled::before {
   content: "";
   background-image: url('ic_alert.svg');
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
   height: 27px;
   width: 27px;
   position: absolute;
   top: 60px;
-  left: 140px;
+  left: 138px;
 }
 .flex-items.-disabled::after {
   content: "   System Unavailable";
   font-size: 12px;
   color: #8294aa;
   position: absolute;
-  padding-top: 70px;
-  left: 175px;
+  padding-top: 63px;
+  left: 160px;
 }
 .flex-items:hover {
   border: 2px solid #8294aa;
